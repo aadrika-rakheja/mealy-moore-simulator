@@ -1,0 +1,84 @@
+.rf-graph .react-flow__node-machineState {
+  width: 84px;
+  height: 84px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.rf-node {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border: 2px solid #42d3c5;
+  border-radius: 50%;
+  background: #102338;
+  color: #dbe6f3;
+  display: grid;
+  place-items: center;
+  transition: border-color .15s, box-shadow .15s;
+}
+
+.rf-node.initial {
+  border-width: 3px;
+  box-shadow: 0 0 0 5px rgba(66, 211, 197, .08);
+}
+
+.rf-node.active,
+.rf-node.selected {
+  border-color: #f59e0b;
+  box-shadow: 0 0 18px rgba(245, 158, 11, .32);
+}
+
+.rf-state-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.rf-state-label span {
+  color: #42d3c5;
+  font-size: 11px;
+}
+
+.rf-graph .react-flow__handle {
+  width: 2px;
+  height: 2px;
+  min-width: 2px;
+  min-height: 2px;
+  border: 0;
+  opacity: 0;
+  background: transparent;
+}
+
+.rf-graph .react-flow__edge-path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rf-graph .react-flow__edge-text {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rf-graph .react-flow__edge-textbg {
+  fill: #08111f;
+  fill-opacity: .94;
+  rx: 5px;
+}
+
+.rf-edge-label {
+  position: absolute;
+  padding: 3px 6px;
+  border: 1px solid #1c3446;
+  border-radius: 5px;
+  background: #08111f;
+  color: #dbe6f3;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}
